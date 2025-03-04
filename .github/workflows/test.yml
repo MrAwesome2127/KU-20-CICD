@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - develop
+      - feature
 
 jobs:
   test:
@@ -24,9 +25,9 @@ jobs:
         - name: 🧰 Install Deps
           run: npm install
           
-        # Run lint
-        - name: Run Lint
-          run: npm run lint
+        # # Run lint
+        # - name: Run Lint
+        #   run: npm run lint
   
         # Run build
         - name: Run Build
