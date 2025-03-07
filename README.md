@@ -26,7 +26,8 @@ SO THAT the application is constantly updated when major releases are made to th
 >
 > * Create a Repository secret and name it 'RENDER_DEPLOY_HOOK_URL' and paste the value from Render 'Deploy Hook'
 
-### GitHub Repo https://github.com/MrAwesome2127/KU-20-CICD
+# GitHub Repo 
+https://github.com/MrAwesome2127/KU-20-CICD
 
 * In this code, Setup "Deploy" YAML to use a variable from Render DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
 
@@ -42,10 +43,51 @@ SO THAT the application is constantly updated when major releases are made to th
 
   * test - will be for test with Cypress to be executed
 
-### Render https://ku-20-cicd.onrender.com
+# Render 
+*Changing*
 
-* In Render 'https://dashboard.render.com/', create a 'Static Site'
-
-  * Publish Directory set as './server/dist'
+* In Render 'https://dashboard.render.com/', create a 'Web Service'
 
   * In the project Settings, copy the 'Deploy Hook'
+
+  * Setup the env variable for MongoDB
+
+# MongoDB
+
+* Obtain your password.
+  
+* Whitelist your DB access https://www.mongodb.com/docs/atlas/security/ip-access-list/
+  
+* 1 In Atlas, go to the Project Settings page.
+  * If it's not already displayed, select the organization that contains your desired project from the  Organizations menu in the navigation bar.
+
+  * If it's not already displayed, select your desired project from the Projects menu in the navigation bar.
+
+  * Next to the Projects menu, expand the  Options menu, then click Project Settings.
+
+
+* 2 In Atlas, go to the Project Activity Feed page.
+If it's not already displayed, select the organization that contains your desired project from the  Organizations menu in the navigation bar.
+
+  * If it's not already displayed, select your desired project from the Projects menu in the navigation bar.
+
+  * Do one of the following steps:
+
+    * Click the Project Activity Feed icon in the right side of the navigation bar.
+
+    * Next to the Projects menu, expand the  Options menu, click Project Settings, and click Activity Feed in the sidebar.
+
+## Add IP Access List Entries
+
+* 1 In Atlas, go to the Network Access page for your project.
+  * If it's not already displayed, select the organization that contains your project from the  Organizations menu in the navigation bar.
+
+  * If it's not already displayed, select your project from the Projects menu in the navigation bar.
+
+  * In the sidebar, click Network Access under the Security heading.
+* 2 Go to IP Access List view.
+  * If it isn't already displayed, click the IP Access List tab.
+
+  * Click  Add IP Address.
+
+* 3 Enter an IP address, CIDR block, or Security Group ID.
