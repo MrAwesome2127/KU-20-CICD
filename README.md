@@ -42,7 +42,7 @@ SO THAT the application is constantly updated when major releases are made to th
 
   * test - will be for test with Cypress to be executed
 
-### Render https://ku-20-cicd.onrender.com
+### Render *Changing*
 
 * In Render 'https://dashboard.render.com/', create a 'Static Site'
 
